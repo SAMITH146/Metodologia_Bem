@@ -1,0 +1,109 @@
+/* --- Componente: producto-card --- */
+.producto-card {
+  /* Estilo general del contenedor de producto */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 250px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.producto-card__imagen {
+  /* Imagen del producto ajustada al ancho completo */
+  width: 100%;
+  height: auto;
+}
+
+.producto-card__titulo {
+  /* Estilo del título del producto */
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.producto-card__descripcion {
+  /* Descripción breve del producto */
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.producto-card__precio {
+  /* Precio del producto como bloque separado */
+  display: block;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.producto-card__boton {
+  /* Botón de acción principal */
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* --- Componente: menu-nav --- */
+.menu-nav__lista {
+  /* Lista de navegación como fila */
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.menu-nav__item {
+  /* Ítem de la lista de navegación */
+}
+
+.menu-nav__enlace {
+  /* Enlace del menú con estilo base */
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.menu-nav__enlace--activo {
+  /* Estado activo del enlace del menú */
+  color: #007BFF;
+}
+
+/* --- Componente: form-contacto --- */
+.form-contacto {
+  /* Contenedor del formulario */
+  max-width: 400px;
+  margin: 1rem 0;
+  font-family: sans-serif;
+}
+
+.form-contacto__grupo {
+  /* Grupo individual de campos (etiqueta + input) */
+  margin-bottom: 1rem;
+}
+
+.form-contacto__etiqueta {
+  /* Etiqueta del campo */
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.form-contacto__input,
+.form-contacto__textarea {
+  /* Estilos comunes para campos de entrada */
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-contacto__boton {
+  /* Botón de envío del formulario */
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}

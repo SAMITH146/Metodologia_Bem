@@ -1,0 +1,50 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Componentes BEM</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- Componente 1: Tarjeta de producto -->
+  <div class="producto-card">
+    <!-- Imagen del producto -->
+    <img src="producto.jpg" alt="Producto A" class="producto-card__imagen">
+    <!-- Título del producto -->
+    <h2 class="producto-card__titulo">Producto A</h2>
+    <!-- Descripción breve -->
+    <p class="producto-card__descripcion">Descripción breve del producto.</p>
+    <!-- Precio del producto -->
+    <span class="producto-card__precio">$99.99</span>
+    <!-- Botón para añadir al carrito -->
+    <button class="producto-card__boton">Añadir al carrito</button>
+  </div>
+
+  <!-- Componente 2: Menú de navegación -->
+  <nav class="menu-nav">
+    <ul class="menu-nav__lista">
+      <!-- Ítems del menú con enlace -->
+      <li class="menu-nav__item"><a href="#" class="menu-nav__enlace menu-nav__enlace--activo">Inicio</a></li>
+      <li class="menu-nav__item"><a href="#" class="menu-nav__enlace">Servicios</a></li>
+      <li class="menu-nav__item"><a href="#" class="menu-nav__enlace">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Componente 3: Formulario de contacto -->
+  <form class="form-contacto">
+    <!-- Grupo de campo: nombre -->
+    <div class="form-contacto__grupo">
+      <label class="form-contacto__etiqueta" for="nombre">Nombre</label>
+      <input type="text" id="nombre" class="form-contacto__input">
+    </div>
+    <!-- Grupo de campo: mensaje -->
+    <div class="form-contacto__grupo">
+      <label class="form-contacto__etiqueta" for="mensaje">Mensaje</label>
+      <textarea id="mensaje" class="form-contacto__textarea"></textarea>
+    </div>
+    <!-- Botón de envío -->
+    <button class="form-contacto__boton">Enviar</button>
+  </form>
+
+</body>
