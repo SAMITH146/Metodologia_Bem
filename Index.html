@@ -7,44 +7,51 @@
 </head>
 <body>
 
-  <!-- Componente 1: Tarjeta de producto -->
+  <!-- Componente 1: Tarjeta de producto - Libro técnico -->
   <div class="producto-card">
     <!-- Imagen del producto -->
-    <img src="producto.jpg" alt="Producto A" class="producto-card__imagen">
+    <img src="Programacion.jpg" alt="Libro de programación" class="producto-card__imagen">
     <!-- Título del producto -->
-    <h2 class="producto-card__titulo">Producto A</h2>
+    <h2 class="producto-card__titulo">Clean Code: A Handbook of Agile Software Craftsmanship</h2>
     <!-- Descripción breve -->
-    <p class="producto-card__descripcion">Descripción breve del producto.</p>
+    <p class="producto-card__descripcion">Autor: Robert C. Martin. Aprende buenas prácticas de codificación limpia con ejemplos en Java.</p>
     <!-- Precio del producto -->
-    <span class="producto-card__precio">$99.99</span>
+    <span class="producto-card__precio">$39.99</span>
     <!-- Botón para añadir al carrito -->
     <button class="producto-card__boton">Añadir al carrito</button>
   </div>
 
-  <!-- Componente 2: Menú de navegación -->
+  <!-- Componente 2: Menú de navegación real -->
   <nav class="menu-nav">
     <ul class="menu-nav__lista">
       <!-- Ítems del menú con enlace -->
-      <li class="menu-nav__item"><a href="#" class="menu-nav__enlace menu-nav__enlace--activo">Inicio</a></li>
-      <li class="menu-nav__item"><a href="#" class="menu-nav__enlace">Servicios</a></li>
-      <li class="menu-nav__item"><a href="#" class="menu-nav__enlace">Contacto</a></li>
+      <li class="menu-nav__item"><a href="index.html" class="menu-nav__enlace menu-nav__enlace--activo">Inicio</a></li>
+      <li class="menu-nav__item"><a href="catalogo.html" class="menu-nav__enlace">Catálogo</a></li>
+      <li class="menu-nav__item"><a href="nosotros.html" class="menu-nav__enlace">Nosotros</a></li>
+      <li class="menu-nav__item"><a href="contacto.html" class="menu-nav__enlace">Contacto</a></li>
     </ul>
   </nav>
 
-  <!-- Componente 3: Formulario de contacto -->
-  <form class="form-contacto">
+  <!-- Componente 3: Formulario de contacto funcional -->
+  <form class="form-contacto" action="enviar_formulario.php" method="POST">
     <!-- Grupo de campo: nombre -->
     <div class="form-contacto__grupo">
-      <label class="form-contacto__etiqueta" for="nombre">Nombre</label>
-      <input type="text" id="nombre" class="form-contacto__input">
+      <label class="form-contacto__etiqueta" for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" class="form-contacto__input" placeholder="Ej. Juan Pérez" required>
+    </div>
+    <!-- Grupo de campo: correo electrónico -->
+    <div class="form-contacto__grupo">
+      <label class="form-contacto__etiqueta" for="correo">Correo electrónico</label>
+      <input type="email" id="correo" name="correo" class="form-contacto__input" placeholder="Ej. juan@mail.com" required>
     </div>
     <!-- Grupo de campo: mensaje -->
     <div class="form-contacto__grupo">
       <label class="form-contacto__etiqueta" for="mensaje">Mensaje</label>
-      <textarea id="mensaje" class="form-contacto__textarea"></textarea>
+      <textarea id="mensaje" name="mensaje" class="form-contacto__textarea" placeholder="Escribe tu consulta aquí..." required></textarea>
     </div>
     <!-- Botón de envío -->
     <button class="form-contacto__boton">Enviar</button>
   </form>
 
 </body>
+</html>
